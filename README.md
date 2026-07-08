@@ -57,7 +57,8 @@ once you're ready.
 - Social icons removed from footers and the contact page (no real accounts yet — add them back in `assets/style.css`'s `.social-row` + the footer markup once you have real handles, rather than linking to accounts that don't exist)
 - All contact emails consolidated to `support@checkmatesplit.app` (support/privacy/legal/partnerships/press all route to the one inbox for now — split them out again later if volume justifies it)
 - Effective/Last updated dates on `privacy.html` and `terms.html` set to July 8, 2026
-- `assets/og-image.png` — a real 1200×630 social preview image, text-forward (logo, tagline, feature pills) rather than a screenshot, since real app screenshots aren't ready yet. Built from `assets/og-image-source.html` via headless Chrome (`google-chrome --headless --screenshot --window-size=1200,630`) — edit that HTML file and re-run the same command to regenerate it.
+- `assets/og-image.png` — a real 1200×630 social preview image, text-forward (logo, tagline, feature pills) rather than a screenshot, since real app screenshots weren't ready yet at the time. Built from `assets/og-image-source.html` via headless Chrome (`google-chrome --headless --screenshot --window-size=1200,630`) — edit that HTML file and re-run the same command to regenerate it.
+- Two real app screenshots are in (`assets/screenshots/balances.png` in the hero, `assets/screenshots/live-split.png` in the Payment Tracking spotlight) — sourced from the simulator, `live-split.png` rotated from its native landscape capture via `sips -r -90`. The remaining `phone-shot` placeholders (hero's "Receipt scan"/"Split the items", and the AI Receipt Scanning / Vacation Mode spotlights) are still gray boxes — drop more screenshots in `assets/screenshots/` and swap them in the same way when ready.
 
 **Still placeholder — search for these strings and replace them:**
 
@@ -66,7 +67,7 @@ once you're ready.
 | `apps.apple.com/app/idXXXXXXXXXX` | `index.html` (two buttons) | Your real App Store URL once the app is approved |
 
 **Also still missing, not placeholders:**
-- Real app screenshots to replace the gray `phone-shot`/`wide-shot` boxes throughout `index.html` — and worth revisiting `og-image.png` once you have them, since a real screenshot-based OG image can outperform a text-only one once the product looks polished on screen
+- Remaining `phone-shot` gray placeholder boxes (see above) — and worth revisiting `og-image.png` once all screenshots are in, since a real screenshot-based OG image can outperform a text-only one once the full set looks polished
 - A real legal entity name if you've incorporated (currently the policies just say "CheckMate")
 
 ## Additional pages worth adding before/soon after launch
