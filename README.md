@@ -52,26 +52,18 @@ once you're ready.
 ## Launch checklist
 
 **Done:**
-- Domain wired in: `checkmatesplit.app` (canonical links + Open Graph/Twitter URLs across all pages)
+- Domain wired in: `checkmatesplit.app` (canonical links + Open Graph/Twitter URLs across all pages) — live on Vercel, redirects apex → `www.checkmatesplit.app`
 - Governing law set to the Commonwealth of Massachusetts (`terms.html` §10)
 - Social icons removed from footers and the contact page (no real accounts yet — add them back in `assets/style.css`'s `.social-row` + the footer markup once you have real handles, rather than linking to accounts that don't exist)
+- All contact emails consolidated to `support@checkmatesplit.app` (support/privacy/legal/partnerships/press all route to the one inbox for now — split them out again later if volume justifies it)
+- Effective/Last updated dates on `privacy.html` and `terms.html` set to July 8, 2026
 
 **Still placeholder — search for these strings and replace them:**
 
 | Placeholder | Where | Replace with |
 |---|---|---|
 | `apps.apple.com/app/idXXXXXXXXXX` | `index.html` (two buttons) | Your real App Store URL once the app is approved |
-| `support@checkmate.app` | `support.html`, `contact.html`, footers | Your real support inbox |
-| `privacy@checkmate.app` | `privacy.html`, `contact.html` | Your real privacy inbox (can be the same as support) |
-| `legal@checkmate.app` | `terms.html` | Your real legal inbox (can be the same as support) |
-| `partnerships@checkmate.app`, `press@checkmate.app` | `contact.html` | Real inboxes, or point both at support if you don't need to split them yet |
-| `[Month Day, Year]` | `privacy.html`, `terms.html` | The date you actually publish these |
 | `assets/og-image.png` | Open Graph tags in every page | A real 1200×630 social preview image (referenced but not yet created — see below) |
-
-Emails were deliberately left as placeholders (at your call) until you've
-set up real inboxes — note they're still on the `@checkmate.app` domain,
-not `@checkmatesplit.app`, so update the domain too whenever you fill
-these in for real.
 
 **Also still missing, not placeholders:**
 - Real app screenshots to replace the gray `phone-shot`/`wide-shot` boxes throughout `index.html`
