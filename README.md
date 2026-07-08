@@ -49,23 +49,29 @@ All three give you free HTTPS, a global CDN, and a `*.vercel.app` /
 `*.netlify.app` preview URL immediately — point your real domain at it
 once you're ready.
 
-## Before you launch — fill these in
+## Launch checklist
 
-Everything below is a clearly-marked placeholder. Search for these strings
-across all files and replace them:
+**Done:**
+- Domain wired in: `checkmatesplit.app` (canonical links + Open Graph/Twitter URLs across all pages)
+- Governing law set to the Commonwealth of Massachusetts (`terms.html` §10)
+- Social icons removed from footers and the contact page (no real accounts yet — add them back in `assets/style.css`'s `.social-row` + the footer markup once you have real handles, rather than linking to accounts that don't exist)
+
+**Still placeholder — search for these strings and replace them:**
 
 | Placeholder | Where | Replace with |
 |---|---|---|
-| `https://checkmate.app` | `<link rel="canonical">`, Open Graph `og:url`/`og:image` tags in every page | Your real production domain |
 | `apps.apple.com/app/idXXXXXXXXXX` | `index.html` (two buttons) | Your real App Store URL once the app is approved |
 | `support@checkmate.app` | `support.html`, `contact.html`, footers | Your real support inbox |
 | `privacy@checkmate.app` | `privacy.html`, `contact.html` | Your real privacy inbox (can be the same as support) |
 | `legal@checkmate.app` | `terms.html` | Your real legal inbox (can be the same as support) |
 | `partnerships@checkmate.app`, `press@checkmate.app` | `contact.html` | Real inboxes, or point both at support if you don't need to split them yet |
-| `instagram.com/checkmateapp`, `twitter.com/checkmateapp`, `tiktok.com/@checkmateapp` | footers, `contact.html` | Your real social handles, or remove the ones you don't have |
 | `[Month Day, Year]` | `privacy.html`, `terms.html` | The date you actually publish these |
-| `[Your State]`, `[Your County/State]` | `terms.html` §10 (Governing Law) | Wherever your business is legally established |
 | `assets/og-image.png` | Open Graph tags in every page | A real 1200×630 social preview image (referenced but not yet created — see below) |
+
+Emails were deliberately left as placeholders (at your call) until you've
+set up real inboxes — note they're still on the `@checkmate.app` domain,
+not `@checkmatesplit.app`, so update the domain too whenever you fill
+these in for real.
 
 **Also still missing, not placeholders:**
 - Real app screenshots to replace the gray `phone-shot`/`wide-shot` boxes throughout `index.html`
