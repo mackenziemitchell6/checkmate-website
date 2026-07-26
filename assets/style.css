@@ -309,6 +309,32 @@ p {
   text-align: center;
 }
 
+/* ---------- Screenshot showcase (App Store style marketing shots) ---------- */
+
+.showcase-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 4px 24px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.showcase-scroll img {
+  flex: 0 0 auto;
+  width: 220px;
+  height: auto;
+  border-radius: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 640px) {
+  .showcase-scroll img {
+    width: 260px;
+  }
+}
+
 .wide-shot {
   aspect-ratio: 16 / 10;
   background: linear-gradient(160deg, var(--card), var(--bg-alt));
